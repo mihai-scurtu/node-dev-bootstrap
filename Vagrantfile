@@ -5,7 +5,6 @@ Vagrant::Config.run do |config|
 
   config.vm.forward_port 3000, 3000
 
-  config.vm.share_folder "app", "/home/vagrant/app", "app"
   config.vm.share_folder "apps", "/home/vagrant/apps", "apps"
 
   # Uncomment the following line to allow for symlinks
