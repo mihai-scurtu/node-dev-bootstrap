@@ -28,7 +28,7 @@ is all customizable in the Vagrantfile.
 You can test out your environment by ssh'ing into your environment and running the sample script:
 
     vagrant ssh
-    cd app
+    cd apps/test
     node server.js
 
 Next open localhost:3000 in your web browser. If everything worked correctly, you should see
@@ -41,7 +41,7 @@ here: https://www.virtualbox.org/ticket/10085
 
 This can cause problems when you're attempting to install certain packages via npm. For
 example, the 'jade' and 'express' packages create symlinks during installation, and
-therefore the installation will fail in the shared 'app' directory.
+therefore the installation will fail in the shared 'apps/' directory.
 
 The best workaround for this is to install node packages in your shared folder with the 
 --no-bin-links flag, e.g.
